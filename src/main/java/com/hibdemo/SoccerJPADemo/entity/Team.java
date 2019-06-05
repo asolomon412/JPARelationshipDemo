@@ -20,7 +20,7 @@ public class Team {
 	private Integer teamid;
 	private String teamname;
 
-	@OneToMany(mappedBy = "team", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany (mappedBy = "team", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Member> members = new ArrayList<>();
 
 	public Team() {
